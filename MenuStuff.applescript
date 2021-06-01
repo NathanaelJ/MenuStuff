@@ -30,18 +30,33 @@ on makeStatusBar()
 	set externalMenuItem to current application's NSMenuItem's alloc()'s initWithTitle:"Public IP" action:"showIExternal:" keyEquivalent:""
 	set noteMenuItem to current application's NSMenuItem's alloc()'s initWithTitle:"Note" action:"createnote:" keyEquivalent:""
 	set maxMenuItem to current application's NSMenuItem's alloc()'s initWithTitle:"Stress Test" action:"stressIt:" keyEquivalent:""
+	set gooseItem to current application's NSMenuItem's alloc()'s initWithTitle:"Goose" action:"goose:" keyEquivalent:""
+	set hjonkItem to current application's NSMenuItem's alloc()'s initWithTitle:"Hjönk" action:"hjonk:" keyEquivalent:""
+	set memeItem to current application's NSMenuItem's alloc()'s initWithTitle:"Speak" action:"speak:" keyEquivalent:""
+	set quitgooseItem to current application's NSMenuItem's alloc()'s initWithTitle:"Kill Goose" action:"quitgoose:" keyEquivalent:""
 	set quitter to current application's NSMenuItem's alloc()'s initWithTitle:"Quit" action:"quitter" keyEquivalent:"q"
 	
 	StatusItem's setMenu:newMenu
 	newMenu's addItem:internalMenuItem
 	newMenu's addItem:externalMenuItem
+	newMenu's addItem:(current application's NSMenuItem's separatorItem)
 	newMenu's addItem:noteMenuItem
 	newMenu's addItem:maxMenuItem
+	newMenu's addItem:(current application's NSMenuItem's separatorItem)
+	newMenu's addItem:gooseItem
+	newMenu's addItem:hjonkItem
+	newMenu's addItem:memeItem
+	newMenu's addItem:quitgooseItem
+	newMenu's addItem:(current application's NSMenuItem's separatorItem)
 	newMenu's addItem:quitter
 	internalMenuItem's setTarget:me
 	externalMenuItem's setTarget:me
 	noteMenuItem's setTarget:me
 	maxMenuItem's setTarget:me
+	gooseItem's setTarget:me
+	hjonkItem's setTarget:me
+	memeItem's setTarget:me
+	quitgooseItem's setTarget:me
 	quitter's setTarget:me
 end makeStatusBar
 
@@ -101,6 +116,23 @@ on stressIt:none
 	my runTheCode()
 	
 end stressIt:
+
+--Goose actions
+on goose:none
+	tell application "Desktop Goose" to activate
+end goose:
+
+on hjonk:none
+	tell application "Desktop Goose" to honk
+end hjonk:
+
+on quitgoose:none
+	tell application "Desktop Goose" to quit
+end quitgoose:
+
+on speak:none
+	tell application "Desktop Goose" to collect note
+end speak:
 
 --Quit
 on quitter()
