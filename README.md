@@ -8,6 +8,7 @@ Now with [desktop goose!](https://samperson.itch.io/desktop-goose)
 
 ## Installation
 
+You'll need to install desktop goose first!
 1. Clone this repository, and open the script using script editor (installed with MacOS).
 2. Use file > export and save as an application.
 3. Run the application! It's useful to setup 'open at login'
