@@ -16,7 +16,7 @@ Small but useful tools living in your MacOS menu bar
 
 * **Local IP** displays your local IP address
 * **Public IP** displays your public IP address
-* **Note** lets the user specify text to display in the menu bar, with the option to set a reminder too
+* **Note** lets you write a note to display in the menu bar, with the option to set a reminder too
 * **Stress test** runs a CPU stress test on your mac, but launching 22 instances of the 'yes' shell command, for a specified period of time
 
 ## Issues & acknowledgements
