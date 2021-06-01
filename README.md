@@ -2,6 +2,8 @@
 
 Small but useful tools living in your MacOS menu bar
 
+Now with [desktop goose!](https://samperson.itch.io/desktop-goose)
+
 ![Screenshot](https://github.com/NathanaelJ/MenuStuff/blob/main/Options.png)
 
 ## Installation
