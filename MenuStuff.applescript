@@ -39,8 +39,8 @@ on makeStatusBar()
 	StatusItem's setMenu:newMenu
 	newMenu's addItem:internalMenuItem
 	newMenu's addItem:externalMenuItem
-	newMenu's addItem:(current application's NSMenuItem's separatorItem)
 	newMenu's addItem:noteMenuItem
+	newMenu's addItem:(current application's NSMenuItem's separatorItem)
 	newMenu's addItem:maxMenuItem
 	newMenu's addItem:(current application's NSMenuItem's separatorItem)
 	newMenu's addItem:gooseItem
