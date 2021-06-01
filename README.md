@@ -14,7 +14,6 @@ Small but useful tools living in your MacOS menu bar
 
 ## Usage
 
-It's fairly self explanatory...
 * **Local IP** displays your local IP address
 * **Public IP** displays your public IP address
 * **Note** lets the user specify text to display in the menu bar, with the option to set a reminder too
