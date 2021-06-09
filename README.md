@@ -25,6 +25,7 @@ You'll need to install desktop goose first!
 * **Hjonk** Makes desktop goose honk
 * **Speak** Makes desktop goose pull out a message
 * **Kill goose** Kill (quit) desktop goose
+* 
 *22 Instances have been tested on a 12-core iMac, although these may not be enough for more powerful devices. The amount of instances can be changed manually in AppleScript
 
 ## Issues & acknowledgements
